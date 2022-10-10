@@ -47,7 +47,7 @@ class LoginActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        subscribeToEvents()
+       subscribeToEvents()
 
         setContent {
             GoldenLeavesTheme {
@@ -92,17 +92,17 @@ fun LoginScreen() {
     val c1 = Color(114, 110, 117)
 
 
-//    viewModel.loadingState.observe(this, Observer { uiLoadingState ->
-//        showProgress = when (uiLoadingState) {
-//            is LoginViewModel.UiLoadingState.Loading -> {
-//                true
-//            }
-//
-//            is LoginViewModel.UiLoadingState.NotLoading -> {
-//                false
-//            }
-//        }
-//    })
+   viewModel.loadingState.observe(this, Observer { uiLoadingState ->
+       showProgress = when (uiLoadingState) {
+           is LoginViewModel.UiLoadingState.Loading -> {
+               true
+           }
+
+           is LoginViewModel.UiLoadingState.NotLoading -> {
+               false
+           }
+       }
+   })
 
         Box(){
             Image(
@@ -170,7 +170,7 @@ fun LoginScreen() {
 
                     onClick = {
 
-//                        viewModel.loginUser(username.text, getString(R.string.jwt_token))
+                       viewModel.loginUser(username.text, getString(R.string.jwt_token))
                               },
                     icon = {
                         Icon(
@@ -187,7 +187,7 @@ fun LoginScreen() {
 //
                 ExtendedFloatingActionButton(
                     onClick = {
-//                        viewModel.loginUser(username.text)
+                       viewModel.loginUser(username.text)
                               },
                     icon = {
                         Icon(
