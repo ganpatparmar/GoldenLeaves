@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GoldenLeaves</string>
+    <string name="api_key">fevhjnwb72rp</string>
+    <string name="jwt_token">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZ2FucGF0NTQ4OSJ9.F6keBop1vcGo_OefUxpSAKjiDN9D2BuyKUrEzQT-v10</string>
+    <string name="eUsername">Enter Username</string>
+    <string name="LoginButton">Login as User</string>
+    <string name="LoginGuest">Login as Guest</string>
+    <string name="AppTitle">Golden Leaves</string>
+</resources>
